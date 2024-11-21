@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links in Cards</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: yellow;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .card a:hover {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    <div class="card">
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Code Link</a>
+    </div>
+    <div class="card">
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">PPT Link</a>
+    </div>
+    <div class="card">
+      <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Research paper</a>
+    </div>
+    <div class="card">
+      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">Video Link</a>
+    </div>
+  </div>
+</body>
+</html>
+
